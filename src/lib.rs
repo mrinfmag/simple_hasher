@@ -1,11 +1,12 @@
 /// Simple Hasher module
 pub mod simple_hasher {
-    type _Data = /*&'static [u8]*/ Vec<u8>;
+    type _Byte = u8;
+    type _Data = Vec<_Byte>;
     use sha2::Digest;
 
     /// Performs the conversion from `u8` slice to `String`
-    pub fn hex_string(input: _Data) -> String {
-        input
+    pub fn hex_string(data: _Data) -> String {
+        data
             .iter()
             .map(|byte| format!("{:x}", byte))
             .collect()
@@ -14,7 +15,6 @@ pub mod simple_hasher {
     /// Generic hashing function
     fn sha<T>(mut hasher: T, data: _Data) -> _Data where T: Digest {
         hasher.input(data.as_slice());
-//        hex_string(&hasher.result())
         hasher
             .result()
             .to_vec()
