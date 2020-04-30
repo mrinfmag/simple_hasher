@@ -3,7 +3,12 @@ name = "simple_hasher"
 version = "0.0.1"
 authors = ["mrinfmag <mrinfmag@gmail.com>"]
 edition = "2018"
-description = "Simple hasher library"
+description = "Simple hashing library"
+repository = "https://github.com/mrinfmag/simple_hasher"
+license-file = "LICENSE"
+keywords = ["hash", "sha", "sha256", "sha384", "sha512"]
+categories = ["cryptography"]
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
