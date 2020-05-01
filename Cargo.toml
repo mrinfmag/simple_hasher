@@ -1,6 +1,6 @@
 [package]
 name = "simple_hasher"
-version = "1.0.0-rc"
+version = "1.0.0"
 authors = ["mrinfmag <mrinfmag@gmail.com>"]
 edition = "2018"
 description = "Simple hashing library"
