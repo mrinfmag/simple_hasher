@@ -1,2 +1,2 @@
-# simple_hasher
-Simple Rust hashing library
+# easy_hasher
+Easy Rust hashing library
